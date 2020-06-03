@@ -1,0 +1,113 @@
+body{
+    width: 90%;
+    margin: auto;
+    padding: 2em;
+    padding-top: 1em;
+    
+}
+
+header h1 {
+color: blue;
+background-color: whitesmoke;
+text-shadow: 2px 2px 2px red, -2px -2px 2px black;
+ border: 100px solid yellow;
+            padding: -11px;
+            margin: 14px;
+            width: 1200px;
+            height: 600px;
+            border-radius: 1000em;
+            text-decoration: underline greenyellow;
+            
+          
+          
+
+}
+
+
+p , h2{ 
+
+    color:blue;
+    
+    text-align: center;
+    font-size: 42px;
+    
+    
+}
+
+
+ h1 {
+     color: chartreuse;
+     text-align: center;
+     font-style: italic;
+     background-color: darkcyan;
+     font-size: 13rem;
+     font-weight: 100;
+     
+    
+ }
+ 
+
+.menuItem img {
+    border: ridge red 5px;
+    margin-left: 550px;
+   
+    
+    
+}
+#location{
+     transform: rotate(14deg);
+     
+}
+ #ty {
+    
+    margin-left: 500px;
+    font-weight: bold;
+}
+ ul {
+     list-style-image: url(../images/bullet.jpg);
+    
+    
+     
+ }
+
+a:link{
+color: navy;
+}
+a:visited {
+    color: greenyellow;
+}
+a:hover{
+    text-decoration: underline;
+    color: mediumvioletred;
+    
+    
+}
+a:focus{ 
+    color: red;
+    text-decoration: underline;
+}
+a:active{
+color: mediumblue;
+}
+video{
+    margin: 45px;
+}
+hr{
+    margin-inline-end: -120px;
+}
+
+.Stats {
+    
+    background-image: url(../images/allButton3.png);
+    height: 445px;
+    width: 440px;
+    margin-left: 450px;
+}
+.Stats:hover{
+   background-position-y: -446px;
+}
+.Stats:active{
+  background-position-y: -892px;
+    
+}
+
