@@ -1,0 +1,180 @@
+body{
+    max-width: 90%;
+    padding: 2em;
+    text-align: center;
+    
+    
+}
+
+header h1 {
+color: blue;
+background-color: whitesmoke;
+text-shadow: 2px 2px 2px red, -2px -2px 2px black;
+ border: 100px solid yellow;
+margin: 25px;
+width: 1200px;
+height: 600px;
+ border-radius: 1000em;
+text-decoration: underline greenyellow;
+            
+          
+          
+
+}
+
+
+p , h2{ 
+
+    color:blue;
+    
+    text-align: center;
+    font-size: 42px;
+    font-family: fantasy,cursive,monospace,sans-serif;
+    white-space: nowrap;
+    
+}
+
+
+ h1 {
+     color: chartreuse;
+     text-align: center;
+     font-style: italic;
+     background-color: darkcyan;
+     font-size: 13rem;
+     font-weight: 100;
+     
+    
+ }
+ 
+
+.menuItem img {
+    border: ridge red 5px;
+    
+   
+    
+    
+}
+.dessert img{
+    border: ridge blue 5px;
+    
+
+
+}
+
+
+#location{
+     transform: rotate(14deg);
+     
+}
+ #ty {
+    
+    
+    right: 154px;
+    font-weight: bold;
+    position: relative;
+}
+.ing{
+    color: blue;
+    text-align: center;
+    font-size: 42px;
+    white-space: nowrap;
+    font-family: 'Piedra', cursive;
+}
+
+ ul {
+     list-style-image: url(../images/bullet.jpg);
+    list-style-position: inside;
+    
+     
+ }
+ li{
+    list-style-image: url(../images/bullet.jpg);
+    list-style-position: inside;
+    position: relative;
+    right: 40em;
+
+ }
+footer {
+    position: fixed;
+    width: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: left;
+    max-width: 800px;
+    background-color: whitesmoke;
+        
+    }
+    .close{
+   
+            width: 20em;
+            height: 17em;
+            background-color: lightblue;
+            padding-top: 15px;
+            
+            
+            
+
+            
+
+    }
+    .messageBox{
+        text-align: center;
+        position: relative;
+        margin: auto;
+        border: 5px solid black;
+        box-sizing: border-box;
+        width: 330px;
+        height: 296px
+
+    }
+
+.button{
+    
+    width: 21px;
+    position: absolute;
+    top: -1px;
+    right: 0px;
+}
+        
+
+    
+
+a:link{
+color: navy;
+}
+a:visited {
+    color: greenyellow;
+}
+a:hover{
+    text-decoration: underline;
+    color: mediumvioletred;
+    
+    
+}
+a:focus{ 
+    color: red;
+    text-decoration: underline;
+}
+a:active{
+color: mediumblue;
+}
+video
+hr{
+    margin-inline-end: -120px;
+}
+
+.Stats {
+    
+    background-image: url(../images/allButton3.png);
+    height: 445px;
+    
+}
+.Stats:hover{
+   background-position-y: -446px;
+}
+.Stats:active{
+  background-position-y: -892px;
+    
+}
+
