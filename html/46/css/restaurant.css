@@ -93,15 +93,14 @@ p , h2{
     position: relative;
     right: 40em;
 
+
  }
 footer {
     position: fixed;
+    bottom: 0;
     width: 10%;
     left: 0;
     right: 0;
-    margin: auto;
-    text-align: left;
-    max-width: 800px;
     background-color: whitesmoke;
         
     }
@@ -159,7 +158,7 @@ a:focus{
 a:active{
 color: mediumblue;
 }
-video
+
 hr{
     margin-inline-end: -120px;
 }
