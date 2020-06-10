@@ -1,0 +1,302 @@
+html{
+    background-color: black;
+    
+}
+body{
+    max-width: 90%;
+    padding: 2em;
+    text-align: center;
+
+    background-color: royalblue;
+    margin-left: 5em;
+    margin-right: 6em;
+
+    
+    
+    
+    
+    
+}
+
+header h1 {
+color: blue;
+background-color: whitesmoke;
+text-shadow: 2px 2px 2px red, -2px -2px 2px black;
+ border: 100px solid yellow;
+margin: 25px;
+width: 1120px;
+height: 600px;
+ border-radius: 1000em;
+text-decoration: underline greenyellow;
+            
+          
+          
+
+}
+
+
+p , h2{ 
+
+    color:blue;
+    
+    text-align: center;
+    font-size: 42px;
+    font-family: fantasy,cursive,monospace,sans-serif;
+    white-space: nowrap;
+    
+}
+
+
+ h1 {
+     color: red;
+     text-align: center;
+     font-style: italic;
+     background-color: limegreen;
+     font-size: 13rem;
+     font-weight: 100;
+     
+    
+ }
+ 
+
+.menuItem img {
+    border: ridge red 5px;
+    
+    
+   
+    
+    
+}
+.dessert img{
+    border: ridge blue 5px;
+    
+
+
+}
+
+
+#location{
+     transform: rotate(14deg);
+     
+}
+ #ty {
+    
+    
+    right: 154px;
+    font-weight: bold;
+    position: relative;
+}
+.ing{
+    color: blue;
+    text-align: center;
+    font-size: 42px;
+    white-space: nowrap;
+    font-family: 'Piedra', cursive;
+}
+
+ ul {
+     list-style-image: url(../images/bullet.jpg);
+    list-style-position: inside;
+    
+     
+ }
+ li{
+    list-style-image: url(../images/bullet.jpg);
+    list-style-position: inside;
+    position: relative;
+    right: 40em;
+
+
+ }
+ video{
+     background-color: white;
+ }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 10%;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+        
+    }
+    .close{
+   
+            width: 20em;
+            height: 17em;
+            background-color: lightblue;
+            padding-top: 15px;
+            
+            
+            
+
+            
+
+    }
+    .messageBox{
+        text-align: center;
+        position: relative;
+        margin: auto;
+        box-sizing: border-box;
+        width: 330px;
+        height: 296px
+
+    }
+
+.button{
+    
+    width: 21px;
+    position: absolute;
+    top: -1px;
+    right: 0px;
+}
+        
+
+    
+
+a:link{
+color: navy;
+}
+a:visited {
+    color: greenyellow;
+}
+a:hover{
+    text-decoration: underline;
+    color: mediumvioletred;
+    
+    
+}
+a:focus{ 
+    color: red;
+    text-decoration: underline;
+}
+a:active{
+color: mediumblue;
+}
+
+hr{
+    margin-inline-end: -120px;
+}
+
+.Stats {
+    
+    background-image: url(../images/allButton3.png);
+    height: 445px;
+    
+}
+.Stats:hover{
+   background-position-y: -446px;
+}
+.Stats:active{
+  background-position-y: -892px;
+    
+}
+@media screen and (max-width: 600px) {
+            video {
+                width: 100%;
+            }
+        }
+
+        @media print {
+
+
+            video {
+                display: none;
+            }
+        }
+div>p {
+            background-color: magenta;
+}
+p:hover {
+            color: yellow;
+        }
+        h1::first-letter {
+        text-shadow: black 2px 2px 12px ;
+        font-family: cursive;
+        font-size: 300px;
+        }
+
+
+        div::first-line {
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        table {
+
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 1em;
+        }
+
+        tfoot td {
+            color: red;
+        }
+
+        caption {
+            font-size: 2em;
+            font-weight: bold;
+            caption-side: top;
+        }
+
+
+
+
+
+        tr:nth-child(2n) {
+            background-color: purple;
+        }
+
+    
+        tbody tr:nth-child(2n + 1) {
+            background-color: yellowgreen
+        }
+
+        tbody tr:hover {
+            background-color: pink !important;
+            
+        }
+         td:last-child{
+             background-color: aqua;
+         }
+         a[href$=".html"] {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        a[class^="H"]{
+            text-shadow: tomato 2px 2px 4px;
+            background-image: url(../images/shnitzel.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        p[class*="n"]{
+            background-image: url(../images/inside.jpg);
+        
+        }
+
+
+         h1+p {
+            text-shadow: 2px 2px 4px red;
+        }
+        h1~div{
+            background-color: lightpink;
+        }
+        img:not(div){
+            border: sandybrown solid 2px;
+        }
+        p:first-child{
+            transform: rotate(4deg);
+        }
+        li:first-of-type{
+            font-weight: bolder;
+            transform: rotate(-8deg);
+            
+        }
+        div:last-of-type{
+            background-color: rgb( 227, 245, 66);
+        }
+        
+        
