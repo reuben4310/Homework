@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reuvain's Restaurant</title>
+
+    <link href="css/restaurant.css" rel="stylesheet" />
+    <link rel="icon" href="../45/images/bullet.jpg">
+    <link rel="stylesheet" href="css/reset.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1 id="name">Reuvain's Restaurant</h1>
+        <p>Address: 453 W. Clifton St.</p>
+        <p>Phone: 843-241-7863</p>
+        <br>
+        <hr>
+
+        <img id="location" src="../42/images/inside.jpg" alt="Inside our restaurant">
+        <br>
+        <img src="../42/images/outside.jpg" alt="outside our restaurant">
+    </header>
+    <br>
+    <form method="post" action="feedBack.php">
+        <label>User Name:
+            <input type="text" name="userName" placeholder="Enter your user name" required minlength="3"
+                maxlength="6" />
+        </label>
+        <label for="email">Email:</label><input type="email" id="email" name="email" placeholder="Enter your email"
+            required />
+        <label for="dateVisited">Date Visited:</label><input type="date" id="dateVisited" name="dateVisited" />
+        <br>
+        <br>
+        <p class="rate"><label for="rating">Rating:</label><input type="range" id="rating" name="rating" min="1"
+                max="5" /></p>
+
+
+        <div>
+            <label for="comments">Comments:
+                <br>
+            </label><textarea id="comments" name="comments" placeholder="Enter some comments" minlength="10"
+                maxlength="250"></textarea>
+                <br>
+                <input type="submit" value="submit">
+            </div>
+    </form>
+
+    <h3>Please enjoy this free video as a gift for visiting our site.</h3>
+    <br>
+    <p><video src="../45/Media/nice.mp4" controls></video>
+    </p>
+    <br>
+    <nav>
+        <ul>
+            <li><a class="Home" href="index.html">Home</a> </li>
+            <li><a href="OurMenu.html">Menu</a></li>
+            <li><a href="hours.html">Store Hours</a></li>
+
+        </ul>
+    </nav>
+    <p></p>
+    <hr>
+    <footer>
+
+        <h3>&copy;Copyright RYN 2020</h3>
+
+    </footer>
+
+
+</body>
+
+</html>
