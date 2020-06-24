@@ -1,0 +1,254 @@
+body{
+    background-color: white;
+}
+.wrapper{
+    display: grid;
+    grid-gap: 10px;
+}
+.bc {
+ background-color: orange;
+       grid-template-areas: "a"
+                            "b"
+                            "c"
+                            "d"
+                            "e"
+                            "f"
+                            "g"
+     }
+      @media screen and (min-width: 600px) {
+          
+          
+
+
+           /* hw 1 */
+            /*.one {
+                grid-column-start: 1;
+                grid-column-end: span 2;
+                grid-row: 1;
+                background-color:green;
+            }
+
+            .two {
+                grid-column-start: 1;
+                grid-column-end: span 1;
+                grid-row: 2;
+                background-color: green;
+            }
+
+            .three {
+                grid-column-start: 2;
+                grid-column-end: span 1;
+                grid-row: 2;
+                background-color: green;
+
+            }
+
+            .four {
+              grid-column-start: 1;
+              grid-column-end: span 1;
+              grid-row: 3;
+               background-color:green;
+            }
+
+            .five {
+                grid-column-start: 2;
+                grid-column-end: span 1;
+                grid-row: 3;
+                background-color: green;
+            }
+
+            .six {
+                grid-column-start: 1;
+                grid-column-end: span 1;
+                grid-row: 4;
+                background-color:green;
+            }
+
+            .seven {
+                grid-column-start: 2;
+                grid-column-end: span 1;
+                grid-row: 4;
+                background-color: green
+            }
+            
+
+             
+            .one {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row: 1;
+                background-color:green;
+            }
+
+            .two {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row: 2;
+                background-color: green;
+            }
+
+            .three {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row: 2;
+                background-color: green;
+
+            }
+
+            .four {
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row: 3;
+               background-color:green;
+            }
+
+            .five {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row: 3;
+                background-color: green;
+            }
+
+            .six {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row: 4;
+                background-color:green;
+            }
+
+            .seven {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row: 4;
+                background-color: green
+
+        } */
+        
+               }
+
+          
+       @media screen and (min-width: 900px) {
+            .wrapper {
+                
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: minmax(100px, auto);
+                     }
+                                                
+            
+                                                    
+                                     
+                                        
+                                       
+              
+                
+                
+            /* hw 1 */
+            
+          /* .one {
+                grid-column-start: 1;
+                grid-column-end: span 2;
+                grid-row: 1;
+                background-color: red;
+            }
+
+            .two {
+                grid-column-start: 3;
+                grid-column-end: span 1;
+                grid-row: 1;
+                background-color: red;
+            }
+
+            .three {
+                grid-column-start: 4;
+                grid-column-end: span 1;
+                grid-row: 1;
+                background-color:red ;
+
+            }
+
+            .four {
+                grid-column-start: 1;
+                grid-column-end: span 1;
+                grid-row: 2;
+                background-color: red;
+            }
+
+            .five {
+                grid-column-start: 2;
+                grid-column-end: span 1;
+                grid-row: 2;
+                background-color: red;
+            }
+
+            .six {
+                grid-column-start: 3;
+                grid-column-end: span 1;
+                grid-row: 2;
+                background-color: red;
+            }
+
+            .seven {
+                grid-column-start: 4;
+                grid-column-end: span 1;
+                grid-row: 2;
+                background-color: red;
+            }*/
+              
+            
+            .one {
+                
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row: 1;
+                background-color: red;
+                
+            }
+
+            .two {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row: 1;
+                background-color: red;
+            }
+
+            .three {
+                grid-column-start: 4;
+                grid-column-end:  6;
+                grid-row: 1;
+                background-color:red ;
+
+            }
+
+            .four {
+                grid-column-start: 1;
+                grid-column-end:  2;
+                grid-row: 2;
+                background-color: red;
+            }
+
+            .five {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row: 2;
+                background-color: red;
+            }
+
+            .six {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row: 2;
+                background-color: red;
+            }
+
+            .seven {
+                grid-column-start: 4;
+                grid-column-end: 6;
+                grid-row: 2;
+                background-color: red;
+        }
+    
+         
+        
+    }
+
+    

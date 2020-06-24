@@ -1,0 +1,45 @@
+
+/* this is what I tried for 3. I couldn't get it to work properly (I think I got the idea though), I was up most of the night tryig to get it to work, but I didn't.*/
+
+
+     grid-template-areas:             "one one one one" "two two" "three three"
+                                                "four four" "five five" "six six" "sev sev";}
+
+.one {
+                
+                grid-area: "one";
+                background-color: red;
+                
+            }
+
+            .two {
+                grid-area: "two";
+                background-color: red;
+            }
+
+            .three {
+                grid-area: "three";
+                background-color:red ;
+
+            }
+
+            .four {
+                grid-area:"four";
+                background-color: red;
+            }
+
+            .five {
+                grid-area:"five";
+                background-color: red;
+            }
+
+            .six {
+                grid-area:"six";
+                background-color: red;
+            }
+
+            .seven {
+                grid-area: "sev";
+                background-color: red;
+        }
+        
