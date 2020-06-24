@@ -2,8 +2,10 @@
 /* this is what I tried for 3. I couldn't get it to work properly (I think I got the idea though), I was up most of the night tryig to get it to work, but I didn't.*/
 
 
-     grid-template-areas:             "one one one one" "two two" "three three"
-                                                "four four" "five five" "six six" "sev sev";}
+     grid-template-areas:              "one one one one" "two two" "three three"
+                                     "four four" "five five" "six six" "sev sev";
+                                                                                
+                                                                              }
 
 .one {
                 
