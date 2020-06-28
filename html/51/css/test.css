@@ -1,0 +1,207 @@
+body{
+    font-family:  Helvetica, Arial, sans-serif;
+    
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 1em 33px 1em;
+    margin: auto;
+}
+.pc{
+    font-style: italic;
+}
+.jumbotron{
+    text-align: center;
+    border-radius: 20px;
+}
+    
+h4{
+    padding-left: 182px;
+}
+
+
+p{
+    text-align: center;
+    white-space: nowrap;
+}
+li{
+float: left;
+list-style: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: red
+}
+
+.mac{
+   grid-column-start: 2;
+   grid-column-end: span 1;
+   grid-row: 1;
+   float: left;
+   padding: 15px;
+   border-right: solid 1px black;
+            
+}   
+
+video{ 
+    padding: 12px;
+    width: 463px;
+    border-right: solid 1px black;;
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row: 1;
+    float: left;
+                
+    
+    }
+   #shira{
+        display: flex;
+   }
+   .candy{
+    
+ display: grid;
+ grid-column-start: 4;
+ grid-column-end: span 2;
+ float:left;  margin:5px;
+ box-sizing: border-box;
+
+         }
+  
+
+  .fluid{
+        width: 1000px;
+        height: 5px;
+        border-radius: 0;
+        display: inline-flex;
+        justify-content:center;
+        align-items:center;
+        
+  }
+
+  input{
+      box-shadow: 2px 3px;
+      border-radius: 5px;
+
+  } 
+  #signup{
+      box-shadow: none;
+      height: 30px;
+  }
+  .about{
+        display: inline-flex;
+        justify-content:center;
+        align-items:center;
+        float: left;
+    }
+
+    table {
+
+    display: inline-block;
+    border-collapse: collapse;
+    background-color: white;
+    padding: 32px 278px 90px;
+    
+    
+
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 1em;
+            
+        }
+         th {
+             text-align: center;
+         }
+         td:first-child{
+             text-align: center;
+         }
+         td{
+             text-align: right;
+         }
+         tfoot{
+             text-align: right;
+             font-weight: bold;
+             
+         }
+        
+    td:last-child{
+        color: red;
+
+                 }
+  tbody tr:nth-child(odd) {
+            background-color: #F8F8FF
+        }
+
+        caption {
+            caption-side: top;
+            text-align: center;
+            font-weight: bold;
+            color: black;
+        }
+        tbody tr:hover {
+            background-color: blue ;
+        }
+.lorem{
+   padding: 0px 174px 0px;
+   white-space: normal;
+   margin: auto;
+}
+#total{
+    text-align: right;
+}
+footer{
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 0px 185px 0px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: justify 6px 6px 7px;
+}
+
+@media screen and (max-width: 1000px) {
+            video {
+                width: 100%;
+                border: none;
+            
+            }
+            .mac{
+                width: 100%;
+                border: none;
+            }
+            .fluid{
+                width: 100%;
+                height: 200px;
+            }
+            input{
+                float:none;
+                display: flex;
+                margin-bottom: 1px;
+                
+                
+            }
+           
+            .email{
+                display: block;
+            }
+             #signup{
+                display: inline-block;
+                margin-top: 12px;
+            }
+
+        }
