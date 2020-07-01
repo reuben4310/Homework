@@ -1,0 +1,30 @@
+ body {
+            padding: 3em 0;
+
+        }
+
+        section {
+            padding-top: 4em;
+            margin-top: 0;
+        }
+
+        caption {
+            caption-side: top;
+        }
+
+        @media screen and (max-width: 1000px) {
+            label {
+                display: block;
+                margin-bottom: .3em;
+
+            }
+
+            figure {
+                border-right:none !important;
+            }
+
+            .tablescroll {
+                overflow: scroll auto;
+            }
+
+        }
