@@ -50,7 +50,7 @@ header h1 {
     font-size: 13rem;
     font-weight: 100;
     border-radius: 1000em;
-    margin: 14px;
+    margin-left: 45px;
     width: 1200px;
     height: 600px;
 }
@@ -76,5 +76,15 @@ video{
     margin: 45px;
 }
 hr{
-    margin-inline-end: -120px;
+    margin-inline-end: -685px;
+}
+p,h2{
+     color:blue;
+    
+    text-align: center;
+    font-size: 42px;
+    
+    
+   margin-right: -621px;
+    
 }

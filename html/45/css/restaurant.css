@@ -1,8 +1,9 @@
 body{
-    width: 90%;
+    max-width: 800px;
     margin: auto;
     padding: 2em;
     padding-top: 1em;
+    
     
 }
 
@@ -31,6 +32,8 @@ p , h2{
     text-align: center;
     font-size: 42px;
     
+    margin-left: 551px;
+    white-space: nowrap;
     
 }
 
@@ -54,6 +57,17 @@ p , h2{
     
     
 }
+.dessert img{
+    border: ridge blue 5px;
+    margin-left: 576px;
+
+
+}
+.dessert2 img{
+    border: ridge blue 5px;
+    margin-left: 555px;
+}
+
 #location{
      transform: rotate(14deg);
      
@@ -62,6 +76,13 @@ p , h2{
     
     margin-left: 500px;
     font-weight: bold;
+}
+.ing{
+    color: blue;
+    text-align: center;
+    font-size: 42px;
+    margin-left: 330px;
+    white-space: nowrap;
 }
  ul {
      list-style-image: url(../images/bullet.jpg);

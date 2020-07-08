@@ -64,6 +64,9 @@ p , h2{
 }
  ul {
      list-style-image: url(../images/bullet.jpg);
+    
+    
+     
  }
 
 a:link{

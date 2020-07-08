@@ -1,7 +1,18 @@
+html{
+    background-color: black;
+}
 body{
     max-width: 90%;
     padding: 2em;
     text-align: center;
+
+    background-color: royalblue;
+    margin-left: 5em;
+    margin-right: 6em;
+
+    
+    
+    
     
     
 }
@@ -12,7 +23,7 @@ background-color: whitesmoke;
 text-shadow: 2px 2px 2px red, -2px -2px 2px black;
  border: 100px solid yellow;
 margin: 25px;
-width: 1200px;
+width: 1120px;
 height: 600px;
  border-radius: 1000em;
 text-decoration: underline greenyellow;
@@ -36,10 +47,10 @@ p , h2{
 
 
  h1 {
-     color: chartreuse;
+     color: red;
      text-align: center;
      font-style: italic;
-     background-color: darkcyan;
+     background-color: limegreen;
      font-size: 13rem;
      font-weight: 100;
      
@@ -49,6 +60,7 @@ p , h2{
 
 .menuItem img {
     border: ridge red 5px;
+    
     
    
     
@@ -94,6 +106,9 @@ p , h2{
     right: 40em;
 
 
+ }
+ video{
+     background-color: white;
  }
 footer {
     position: fixed;
