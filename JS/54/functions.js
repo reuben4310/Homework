@@ -31,7 +31,7 @@ const a = getMultiplier2(5);
 console.log(a(8));
 
 const b = getMultiplier2(15);
-console.log(a(18));
+console.log(b(18));
 
 const c = getMultiplier2(4);
-console.log(a(80));
+console.log(c(80));
