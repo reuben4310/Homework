@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     const colors = ["red", "orange", "green", "blue", "brown", "purple", "gray", "white"];
-    // const colors2 = ['#FFFFFF', '#0000FF', '#FF0000', '#00FF00', '#808080', '#FFFF00'];
+
 
     let colorIndex = 0;
 
@@ -57,4 +57,3 @@
         }
     });
 }());
-
