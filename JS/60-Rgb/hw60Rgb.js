@@ -27,7 +27,7 @@
         let bgColor = "rgb(" + x + "," + y + "," + z + ")";
 
         let color = "rgb(" + a + ", " + b + ", " + c + ")";
-        console.log(bgColor);
+        console.log('backRound',bgColor);
         console.log(color);
 
         document.body.style.background = bgColor;
