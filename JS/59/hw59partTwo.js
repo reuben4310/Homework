@@ -1,3 +1,4 @@
+// SL - nice! (but get rid of the extra whitespace and fix indenting)
 // Q2/A
 window.myApp = window.myApp || {};
 window.myApp.Count = (function () {
@@ -5,7 +6,7 @@ window.myApp.Count = (function () {
 let count =0;
 
 
-   
+
 
     return {
         getCount: function () {
@@ -17,4 +18,3 @@ let count =0;
     };
 
 }());
-       

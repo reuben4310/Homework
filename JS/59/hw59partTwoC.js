@@ -1,3 +1,5 @@
+// SL - 100
+// SL nice (but why not get used to always putting code in IIFE so no globals?, also always add 'use strict')
 // Q2/C
 
 for (let step = 0; step < 10; step++) {
