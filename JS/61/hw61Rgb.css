@@ -1,0 +1,30 @@
+
+p{
+    white-space: pre;
+    
+}
+input:hover{
+    color: tomato;
+    background-color: violet;
+    
+    height: 22px;
+    border: solid 1px rgb(74, 74, 74);
+}
+caption { 
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+    color: red;
+
+
+}
+
+th {
+    width: 140px;
+    height: 20px;
+
+   }
+
+ th, td {
+        border: 1px solid black;
+        }
