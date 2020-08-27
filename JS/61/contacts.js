@@ -51,7 +51,7 @@
     const phoneCell = newRow.insertCell();
     const buttonCell = newRow.insertCell();
     const myNewButton = document.createElement('button');
-
+    myNewButton.innerHTML="Delete";
     buttonCell.appendChild(myNewButton);
 
 
