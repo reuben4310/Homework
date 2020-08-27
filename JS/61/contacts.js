@@ -49,10 +49,11 @@
     const lastCell = newRow.insertCell();
     const emailCell = newRow.insertCell();
     const phoneCell = newRow.insertCell();
-    const buttonCell=newRow.insertCell();
+    const buttonCell = newRow.insertCell();
     const myNewButton = document.createElement('button');
+
     buttonCell.appendChild(myNewButton);
-    
+
 
     buttonCell.addEventListener("click", function () {
       document.getElementById("contacts").deleteRow(size);
