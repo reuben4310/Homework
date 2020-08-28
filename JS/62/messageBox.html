@@ -26,7 +26,7 @@
   molestias laborum exercitationem laboriosam dolorum. Optio eius aperiam quia amet?
   <script src="messageBox.js"></script>
   <script>
-    
+
     pcs.messageBox.show(usersChoice => console.log('You picked ' + usersChoice), 'Is this enough homework?', true,
       ['Yes', 'No', 'Maybe']
     );
@@ -34,7 +34,7 @@
     const msgTextInput = document.getElementById('msgText');
     const modalCheckbox = document.getElementById('modal');
     document.getElementById('addMsg').addEventListener('click', () => {
-    pcs.messageBox.show(msgTextInput.value, modalCheckbox.checked);
+      pcs.messageBox.show(msgTextInput.value, modalCheckbox.checked);
 
     });
   </script>

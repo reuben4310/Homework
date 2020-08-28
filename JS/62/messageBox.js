@@ -20,7 +20,7 @@ window.pcs.messageBox = (function () {
   modalOverlay.style.display = 'none';
   document.body.appendChild(modalOverlay);
 
-  function show(callback,msg, modal = false, but = ['Ok']) {
+  function show(callback, msg, modal = false, but = ['Ok']) {
     const messageBox = document.createElement('div');
     const span = document.createElement('span');
     span.innerHTML = msg;
@@ -36,13 +36,15 @@ window.pcs.messageBox = (function () {
       okButton.innerHTML = element;
       buttons.appendChild(okButton);
       okButton.addEventListener('click', () => {
-      document.body.removeChild(messageBox);
-      modalOverlay.style.display = 'none';
-      callback(element);
+        document.body.removeChild(messageBox);
+        modalOverlay.style.display = 'none';
+        callback(element);
+        response(element);
+
       });
 
     });
-    
+
     messageBox.addEventListener('click', () => {
       messageBox.style.zIndex = nextZindex++;
     });
@@ -91,7 +93,56 @@ window.pcs.messageBox = (function () {
     }
   }
 
+
+  function response(ch) {
+    const messageBox = document.createElement('div');
+    const span = document.createElement('span');
+    span.innerHTML = "You picked: " + ch;
+    messageBox.appendChild(span);
+    const buttons = document.createElement('div');
+    messageBox.appendChild(buttons);
+
+    const butt = document.createElement('div');
+    const okButton = document.createElement('button');
+    okButton.innerHTML = 'Ok';
+    buttons.appendChild(okButton);
+    messageBox.appendChild(butt);
+    okButton.addEventListener('click', () => {
+      document.body.removeChild(messageBox);
+      modalOverlay.style.display = 'none';
+
+    });
+
+    messageBox.className = 'messageBox';
+
+    // probably should move this all to css file....
+    messageBox.style.backgroundColor = 'lightblue';
+    messageBox.style.padding = '1em';
+    messageBox.style.paddingBottom = '38px';
+    messageBox.style.boxSizing = 'border-box';
+    messageBox.style.width = `${width}px`;
+    messageBox.style.height = `${height}px`;
+    messageBox.style.position = 'absolute';
+    messageBox.style.top = '50%';
+    messageBox.style.left = '50%';
+    messageBox.style.marginLeft = `${leftOffset}px`;
+    messageBox.style.marginTop = `${topOffset}px`;
+    messageBox.style.border = '1px solid black';
+    messageBox.style.zIndex = nextZindex++;
+
+    span.style.overflow = 'auto';
+    span.style.height = '100%';
+    span.style.display = 'inline-block';
+
+    buttons.style.position = 'absolute';
+    buttons.style.bottom = '8px';
+    buttons.style.left = 0;
+    buttons.style.width = '100%';
+    buttons.style.textAlign = 'center';
+
+    document.body.appendChild(messageBox);
+  }
   return {
-    show: show
+    show: show,
   };
 }());
