@@ -1,3 +1,4 @@
+/* global $*/
 (function () {
     'use strict';
 
@@ -17,10 +18,9 @@
                 $(`<li><span>${vid.Title}</span>
                 <br>
                     <img src= ${vid.Image} alt= ${vid.Title} 
-                     
                 </li>`)
                     .appendTo(videosList).click(() => {
-                        setTimeout(() => video.show(), 500);
+                        video.show();
                         video.attr('src', vid.URL);
                         video[0].play();
 
