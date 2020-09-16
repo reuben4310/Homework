@@ -1,0 +1,25 @@
+body {
+            display: flex;
+            text-align: center;
+            margin: auto;
+        }
+
+        aside {
+            flex: 1 2 25%;
+            padding: 1em;
+            box-sizing: border-box;
+        }
+        img{
+           width: 320px;
+        }
+        video{
+            width: 1000px;
+
+        }
+        ol{
+           display: inline-block;
+        }
+        
+       span{
+           font-weight: bold;
+       }
