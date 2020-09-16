@@ -1,0 +1,26 @@
+body {
+            display: flex;
+            text-align: center;
+            margin: auto;
+        }
+
+        aside {
+            flex: 1 2 25%;
+            padding: 1em;
+            box-sizing: border-box;
+        }
+        img{
+           width: 320px;
+        }
+        
+        ol{
+           display: inline-block;
+        }
+        
+       span{
+           font-weight: bold;
+       }
+       iframe{
+          width: 1180px;
+          height: 1000px
+       }
