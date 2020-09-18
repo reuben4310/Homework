@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-color:royalblue;
+}
+
+li{
+    
+    display: inline-block;
+    padding: 5px;
+   
+}
+img{
+    width: 200px;
+    height: 100px;
+    border: black 3px solid;
+   
+}
+span{
+    text-align: center;
+    font-weight: bold;
+}
