@@ -18,4 +18,6 @@ img{
 span{
     text-align: center;
     font-weight: bold;
+    display: inline-block;
+    width: 200px;
 }
