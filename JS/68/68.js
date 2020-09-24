@@ -13,7 +13,7 @@
                 data.items.forEach(item => {
                     let url = (item.media && item.media.m) ? item.media.m : "";
 
-                    $(`<li><span>${item.title.substring(0, 20)}</span>
+                    $(`<li><span>${item.title.substring(0, 22)}</span>
                 <br>
                     <img src= ${url}>
                 </li>`)
