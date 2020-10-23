@@ -29,11 +29,13 @@
             dragging = null;
         }
         $('.parts').each(function (i, parts) {
-            local.push({ id: $(parts).attr("id"), 
-            top: $(parts).css('top'), 
-            left: $(parts).css('left'), 
-            zind: $(parts).css('z-index') });
-            
+            local.push({
+                id: $(parts).attr("id"),
+                top: $(parts).css('top'),
+                left: $(parts).css('left'),
+                zind: $(parts).css('z-index')
+            });
+
 
         });
         localStorage.local = JSON.stringify(local);
@@ -53,21 +55,18 @@
         //test
         $(obj).css('left', 60);
         $(obj).css('top', y += 222);
-
-
+        
     });
 
     if (localStorage.local) {
-      local=JSON.parse(localStorage.local);
-        local.forEach(rec =>{
-            $(`#${rec.id}`).css('top',rec.top);
+        local = JSON.parse(localStorage.local);
+        local.forEach(rec => {
+            $(`#${rec.id}`).css('top', rec.top);
             $(`#${rec.id}`).css('left', rec.left);
             $(`#${rec.id}`).css('z-index', rec.zind);
-            
-            });
+
+        });
 
     }
-
-
 
 }());
