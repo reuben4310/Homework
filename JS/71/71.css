@@ -1,0 +1,23 @@
+.parts{
+    position: absolute;
+    height: 220px;
+    width: 336px;
+
+    
+}
+#mouth{
+    height: 80px;
+    width: 144px;
+}
+
+#nose{
+    height: 80px;
+    width: 144px;
+}
+#face{
+    height: 201px;
+}
+li{
+    list-style: url(media/full.png);
+    height:550px;
+}
