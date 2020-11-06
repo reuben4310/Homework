@@ -15,7 +15,7 @@
         // js hint not ready for this experimental syntax yet
         static SIZE = 2; // jshint ignore:line
 
-        constructor(context, color, size) {
+        constructor(context, color) {
             this.x = canvas.width / 2;
             this.y = canvas.height / 2;
 
@@ -34,13 +34,12 @@
 
         move() {
 
-
             if (--this.brains <= 0) {
                 this.brains = Ant.getRandomNumber(1, 100);
                 this.randomX = Ant.getRandomNumber(-1, 1);
                 this.randomY = Ant.getRandomNumber(-1, 1);
-
             }
+
             this.x += this.randomX;
             this.y += this.randomY;
 
@@ -62,10 +61,7 @@
         static getRandomNumber(min, max) {
             return Math.floor(Math.random() * (max - min + 1) + min);
         }
-
-
     }
-
 
     const context = canvas.getContext('2d');
     const ants = [];
@@ -81,14 +77,12 @@
     document.getElementById('controls').addEventListener('submit', e => {
         e.preventDefault();
 
-
         const colorPicker = document.getElementById('color');
         const amountPicker = document.getElementById('amount');
         for (let i = 0; i < amountPicker.value; i++) {
 
             ants.push(new Ant(context, colorPicker.value));
         }
-
 
     });
 
