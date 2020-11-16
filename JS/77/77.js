@@ -27,17 +27,15 @@
         let score = 0;
         let appX = (Math.floor(Math.random() * (w))) * SNAKE_SIZE;
         let appY = (Math.floor(Math.random() * (h))) * SNAKE_SIZE;
-        
 
         const theButton = document.getElementById('theButton');
 
         theButton.addEventListener('click', () => {
             direction = 'ArrowRight';
-            
+
 
         });
-        
-    
+
         function draw() {
 
             context.clearRect(0, 0, canvas.width, canvas.height);
@@ -48,56 +46,50 @@
             context.fillText(score, canvas.width - 120, 50);
 
         }
-        
-            
-            let game;
-            game = setInterval(() => {
 
-                draw();
+        let game;
+        game = setInterval(() => {
 
-                if (xSn === appX && ySn === appY) {
-                    console.log("Boom!!");
-                    appX = (Math.floor(Math.random() * (w))) * SNAKE_SIZE;
-                    appY = (Math.floor(Math.random() * (h))) * SNAKE_SIZE;
-                    score++;
-                    const hiss = document.getElementById('hiss');
-                    hiss.play();
-                }
+            draw();
 
-                if (xSn > canvas.width || xSn < 0 || ySn > canvas.height || ySn < 0) {
+            if (xSn === appX && ySn === appY) {
+                console.log("Boom!!");
+                appX = (Math.floor(Math.random() * (w))) * SNAKE_SIZE;
+                appY = (Math.floor(Math.random() * (h))) * SNAKE_SIZE;
+                score++;
+                const hiss = document.getElementById('hiss');
+                hiss.play();
+            }
 
-                    const crash = document.getElementById('crash');
-                    crash.play();
-                    alert('Game over');
-                    clearInterval(game);
-                    window.location.reload();
+            if (xSn > canvas.width || xSn < 0 || ySn > canvas.height || ySn < 0) {
 
-                    
-                    
+                const crash = document.getElementById('crash');
+                crash.play();
+                alert('Game over');
+                clearInterval(game);
+                window.location.reload();
 
-                }
-                
+            }
+
+            switch (direction) {
+                case 'ArrowLeft':
+                    xSn -= SNAKE_SIZE;
+                    break;
+                case 'ArrowRight':
+                    xSn += SNAKE_SIZE;
+                    break;
+                case 'ArrowUp':
+                    ySn -= SNAKE_SIZE;
+                    break;
+                case 'ArrowDown':
+                    ySn += SNAKE_SIZE;
+                    break;
+            }
+
+        }, 500);
 
 
-                switch (direction) {
-                    case 'ArrowLeft':
-                        xSn -= SNAKE_SIZE;
-                        break;
-                    case 'ArrowRight':
-                        xSn += SNAKE_SIZE;
-                        break;
-                    case 'ArrowUp':
-                        ySn -= SNAKE_SIZE;
-                        break;
-                    case 'ArrowDown':
-                        ySn += SNAKE_SIZE;
-                        break;
-                }
 
-            }, 500);
-        
-
- 
         document.addEventListener('keydown', e => {
 
             switch (e.key) {
