@@ -20,7 +20,6 @@
   window.addEventListener('resize', resizeCanvas);
   resizeCanvas();
 
-
   class Snake {
     constructor() {
 
