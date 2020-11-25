@@ -1,7 +1,7 @@
 
 
 'use strict';
-import '80.css';
+import './80.css';
 import $ from 'jquery';
 let dragging;
 let offset;
@@ -62,7 +62,5 @@ if (localStorage.local) {
         $(`#${rec.id}`).css('top', rec.top);
         $(`#${rec.id}`).css('left', rec.left);
         $(`#${rec.id}`).css('z-index', rec.zind);
-
-
     });
 }

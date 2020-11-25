@@ -3,16 +3,22 @@ const json5 = require('json5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const webpack = require('webpack');
+
+new webpack.BannerPlugin(options);
 
 module.exports = {
     entry: {
         app: './src/index.js',
-        // commented out for hmr
-        // sayHello: './src/sayHello',npm run 
-        // another: './src/another'
-        watch: true,
-        
     },
+
+    watch: true,
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000
+    },
+
     plugins: [
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
         new HtmlWebpackPlugin({
@@ -35,7 +41,7 @@ module.exports = {
     devtool: 'source-map',
     devServer: {
         contentBase: './dist',
-        // hot: true
+         hot: true
     },
     module: {
         rules: [
@@ -43,10 +49,7 @@ module.exports = {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader']
             },
-            /*{
-              test: /\.(png|svg|jpg|jpeg|gif)$/i,
-              type: 'asset/resource',
-            }*/
+          
             {
                 test: /\.(png|jpg|gif)$/i,
                 use: [
