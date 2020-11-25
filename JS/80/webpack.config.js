@@ -3,9 +3,9 @@ const json5 = require('json5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
-const webpack = require('webpack');
 
-new webpack.BannerPlugin(options);
+
+
 
 module.exports = {
     entry: {
