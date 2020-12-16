@@ -28,7 +28,8 @@ class App extends Component {
 
         }
       }
-    ]
+    ],
+    currentRecipe: this.state.recipes[0]
   };
 
   getRecipeElements() {
@@ -57,7 +58,7 @@ class App extends Component {
         </header>
 
         {this.getRecipeElements()}
-        <Details details={this.state.recipes[0].details} />
+        <Details details={this.state.currentRecipe.details} />
       </div>
     );
   }
