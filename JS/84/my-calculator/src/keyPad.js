@@ -5,7 +5,7 @@ class KeyPadComponent extends Component {
     render() {
         return (
             <div class="calculator">
-                <div id="screen" class="screen"></div>
+                <div id="screen" class="screen">{this.props.input}</div>
                 <div class="buttons">
                     <button onClick={e => this.props.onClick(e.target.name)} class="btn clear" name="C" onClick={e => this.props.onClick(e.target.name)}>C</button>
                     <button name="&lt;-" onClick={e => this.props.onClick(e.target.name)} class="btn backspace">&lt;-</button>

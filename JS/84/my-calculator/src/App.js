@@ -52,6 +52,7 @@ class App extends Component {
     } catch (e) {
       this.setState({
         result: "error"
+
       })
 
     }
@@ -76,7 +77,7 @@ class App extends Component {
 
           <ResultComponent result={this.state.result} />
 
-          <KeyPadComponent onClick={this.onClick} />
+          <KeyPadComponent input={this.state.result} onClick={this.onClick} />
 
         </div>
       </div>
