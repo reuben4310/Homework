@@ -1,0 +1,24 @@
+#users{
+    border: 2px solid black;
+}
+ul{
+   
+    list-style: none;
+}
+span {font-family: 'Bangers', arial, serif;
+    font-size: 27px;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 1px;
+    padding-bottom: 6px;}
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 1400px !important;
+  text-align: center;
+  background: white;
+}
+body {
+  text-align: center;
+  
+}
