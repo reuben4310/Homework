@@ -1,0 +1,16 @@
+.control {
+  font-size: 2em;
+  color: black;
+  cursor: pointer;
+          }
+          
+   .control:hover{
+       color: blue;
+   }        
+   .control:active{
+       color:red
+   }        
+
+ a:link {
+  text-decoration: none!important;
+}

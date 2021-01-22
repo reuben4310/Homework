@@ -1,0 +1,5 @@
+<a (click)="onPreviousClick()"><span class="control" id="left">&lsaquo;</span></a>
+<div *ngFor="let post of postsArr.slice(counter, counter+3)">
+  <app-post [post]="post"></app-post>
+  
+</div><a (click)="onNextClick()"><span class="control" id="right">&rsaquo;</span></a>
