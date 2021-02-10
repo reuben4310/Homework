@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 40px "Lucida Grande", monospace, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.name{
+  font-weight: bold;
+}
+.phone{
+  color: red;
+  list-style: none;
+  
+}

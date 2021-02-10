@@ -1,0 +1,18 @@
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+   
+    <ul>        
+        {{#contacts}}     
+        <li class="name">{{name}}</li> 
+        <li class="phone"> Phone: {{phone}}</li>
+        {{/contacts}}
+    </ul>
+    <a href="createNewContact"></a>
+    
+    </body>
+    
+    </html>

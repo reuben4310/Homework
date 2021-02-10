@@ -1,0 +1,3 @@
+<form action="/contacts/createNewContact">
+    <input name="name" type="text"><button>Add</button>
+</form>
