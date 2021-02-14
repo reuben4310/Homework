@@ -1,0 +1,32 @@
+<link rel='stylesheet' href='/stylesheets/contacts.css' />
+
+<a class="btn" href="/contacts/addContact">add contact</a>
+<table id="contacts">
+  <thead>
+    <tr>
+      <th>first</th>
+      <th>last</th>
+      <th>email</th>
+      <th>phone</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#noContacts}}
+    <tr>
+      <td colspan="5">no contacts loaded</td>
+    </tr>
+    {{/noContacts}}
+    {{#contacts}}
+    <tr>
+      <td>{{firstName}}</td>
+      <td>{{lastName}}</td>
+      <td>{{email}}</td>
+      <td>{{phone}}</td>
+      <td><a class="btn" id="delete" href="/contacts/deleteContact/{{id}}">delete contact</a>
+        <a class="btn" id="edit" href="/contacts/editContact/{{id}}">Edit</a>
+      </td>
+    </tr>
+    {{/contacts}}
+  </tbody>
+</table>

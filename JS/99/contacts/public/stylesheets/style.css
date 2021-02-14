@@ -1,0 +1,23 @@
+.formGroup {
+  margin-bottom: .5em;
+}
+
+.formGroup label {
+  width: 3em;
+  display: inline-block;
+}
+
+
+.btn {
+  background-color: buttonface;
+  border: 1px solid buttontext;
+  padding: .10em;
+  text-decoration: none;
+  color: red;
+ 
+}
+
+.buttons {
+  text-align: center;
+}
+
