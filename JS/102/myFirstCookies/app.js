@@ -23,23 +23,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((req, res, next) => {
 
-  let cookieIncrementer = req.cookies['settings'] ? JSON.parse(req.cookies['settings']) : 0;
-  res.cookie('settings', JSON.stringify(++cookieIncrementer),{ maxAge: 20000 }); 
+  let cookieIncrementer = req.cookies['purim'] ? JSON.parse(req.cookies['purim']) : 0;
+  res.cookie('purim', JSON.stringify(++cookieIncrementer), { maxAge: 20000 });
   res.locals.purim = cookieIncrementer;
 
   next();
 });
 
-app.post('/addName',(req, res, next) => {
-  
+app.post('/addName', (req, res, next) => {
 
   let userName = req.cookies['username'] ? JSON.parse(req.cookies['username']) : {}
 
   const settings = {
-    name: req.query.firstName || userName.firstName || ''
+    name: req.body.firstName || userName.firstName || ''
   }
+
   res.cookie('username', JSON.stringify(settings.name), { maxAge: 20000 })
-  res.locals.userName = settings.name
+  app.locals.userName = settings.name
 
   next();
 });

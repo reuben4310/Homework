@@ -11,7 +11,7 @@
   <h1>{{ title }}</h1>
   <p>Welcome to {{ title }}</p>
   <p>You vistited {{purim}} times</p>
-  <p>Hi {{name}} </p>
+  <p>Hi {{userName}} </p>
 </body>
 
 </html>
