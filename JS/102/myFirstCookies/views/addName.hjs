@@ -1,0 +1,17 @@
+<link rel='stylesheet' href='/stylesheets/addName.css' />
+
+<form id="nameForm" method="POST">
+    <div class="formGroup">
+        <label for="firstName">first:</label>
+        <input id="firstName" name="firstName" {{#addName}}value="{{firstName}}" {{/addName}}>
+    </div>
+    <div class="formGroup">
+        <label for="lastName">last:</label>
+        <input id="lastName" name="lastName" required {{#addName}}value="{{lastName}}" {{/addName}}>
+    </div>
+
+    <div class="buttons">
+        <button class="btn">save</button>
+        <a class="btn" href="/addName">cancel</a>
+    </div>
+</form>
