@@ -1,0 +1,6 @@
+{{#comments}}
+<div class="comments">
+    <h3>{{author}} on {{date}}</h3>
+    <div>{{body}}</div>
+</div>
+{{/comments}}

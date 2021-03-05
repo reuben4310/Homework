@@ -1,0 +1,12 @@
+[
+  {title: "Theres a crisis on the border", body: "Lorem ipsum dolor sit amet consectetur
+   adipisicing elit. Quod rerum vitae voluptatibus sint! Reprehenderit, dignissimos suscipit? Dolore
+    ipsam repellat quaerat itaque mollitia consequuntur assumenda nesciunt!", author: "Donald Trump", 
+    date: new Date()
+  },
+  {title: "Biden responsible for vaccines", body: "Lorem ipsum dolor sit amet consectetur
+   adipisicing elit. Quod rerum vitae voluptatibus sint! Reprehenderit, dignissimos suscipit? Dolore 
+   ipsam repellat quaerat itaque mollitia consequuntur assumenda nesciunt!", author: "CNN", date: 
+   new Date()
+  }
+]
